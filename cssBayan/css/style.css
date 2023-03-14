@@ -1,0 +1,128 @@
+.wrapper {
+    width: 40%;
+    margin: 0 auto;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    padding: 5%;
+    font-weight: 1000;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    border-top: 0.1rem solid black;
+    padding: 0.2rem;
+}
+
+.label {
+    flex-shrink: 1;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radio_button {
+    opacity: 0;
+    height: 0;
+}
+
+.img_mem {
+    width: 0;
+    opacity: 0;
+    transition: all 0.7s ease-in;
+}
+
+.label_text {
+    font-weight: 1000;
+    font-size: 1.4rem;
+    padding: 1rem;
+    width: calc(100% - 4.815rem);
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.7rem;
+    background-image: url(../assets/threepoints.png);
+    background-size: 100%;
+    transition: 0.7s;
+}
+
+input:checked~.img_mem,
+input:hover~.img_mem{
+    opacity: 1;
+    width: 20rem;
+    transition: all 0.7s ease-in;
+}
+
+input:checked~.label_text,
+.content:hover{
+    color: #000000;
+}
+
+input:checked~.icon,
+input:hover~.icon{
+    background-image: url(../assets/cross.png);
+    transition: 0.7s;
+}
+
+.content {
+    color: rgb(116, 116, 240);
+    transition: 0.7s ease-in;
+}
+
+@media screen and (max-width: 1000px){
+    .label_text{
+        font-size: 1.2rem;
+    }
+    .h1{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .label_text{
+        font-size: 1rem;
+    }
+    .h1{
+        font-size: 1.5rem;
+    }
+    input:checked~.img_mem{
+    width: 12rem;
+    }
+    .icon{
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-top: 1rem;
+    }
+    .label_text {
+        width: calc(100% - 4.515rem);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .label_text{
+        font-size: 0.5rem;
+    }
+    .h1{
+        font-size: 1rem;
+    }
+    input:checked~.img_mem{
+    width: 7rem;
+    }
+    .icon{
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-top: 0.9rem;
+    }
+    .label_text {
+        width: calc(100% - 4.115rem);
+    }
+}
