@@ -94,8 +94,7 @@ input:hover~.icon{
     .h1{
         font-size: 1.5rem;
     }
-    input:checked~.img_mem,
-    input:hover~.img_mem{
+    input:checked~.img_mem{
     width: 12rem;
     }
     .icon{
@@ -115,8 +114,7 @@ input:hover~.icon{
     .h1{
         font-size: 1rem;
     }
-    input:checked~.img_mem,
-    input:hover~.img_mem{
+    input:checked~.img_mem{
     width: 7rem;
     }
     .icon{
